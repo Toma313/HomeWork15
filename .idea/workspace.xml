@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee4086a-59a4-4a56-b435-80b026a147c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CourseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CourseEnam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CoursePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Browsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/DriverConfig.java" afterDir="false" />
+    <list default="true" id="6ee4086a-59a4-4a56-b435-80b026a147c2" name="Changes" comment="commit1">
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CourseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CourseEnam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestCourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,31 +42,26 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/tamara.voloshchuk/IdeaProjects/HomeWork15/src/main/java"
+    "last_opened_file_path": "C:/Users/tamara.voloshchuk/IdeaProjects/HomeWork15/src/main"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15\src\main" />
       <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15" />
+      <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15\src" />
+      <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15\src\main" />
+      <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15\src\main\java" />
+      <recent name="C:\Users\tamara.voloshchuk\IdeaProjects\HomeWork15\target" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.TestCourse">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="HomeWork20" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="HomeWork20" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestCourse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HomeWork20" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,6 +101,14 @@
       <option name="presentableId" value="Default" />
       <updated>1675982288363</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit1">
+      <created>1675984253322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675984253322</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,5 +121,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
   </component>
 </project>

@@ -4,25 +4,34 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class CoursePage {
-    @FindBy(xpath = "//*[@id=\"body\"]/div[1]/div[1]/div[2]/div/div/nav/ul/li[2]/button")
-    WebElement elementCourse;
 
-    @FindBy(xpath = "//*[@id=\"body\"]/div[1]/div[1]/div[2]/div/div/nav/ul/li[2]/button")
-          WebElement courseButton;
+    @FindBy (xpath = "//*[contains(@class,\"course-list\")and contains(@class,\"course-list_item\")]")
+    static
+    List<WebElement> coursesList;
+
+    @FindBy( id = "coursesMenuSearchField")
+    WebElement searchField;
 
 
-    WebDriver driver;
+    static WebDriver driver;
     public CoursePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    public  static List<String> getCourseList(String item) {
+        driver.findElement(searchField).sendKeys();
+        for (WebElement i  : coursesList){
+            String name = i.findElement(By.className("course-label_name")).getText();
 
-    //boolean eleSelected= driver.findElement(By.xpath("//*[@id=\"body\"]/div[1]/div[1]/div[2]/div/div/nav/ul/li[2]/button")).isDisplayed();
+        return new Object[];
+    }
+
+
+
 }
-//    public void sendCourseForm(String textInput) throws InterruptedException {
-//        this.textInput.sendKeys(textInput);
-//        confirmButton.click();
-//        Thread.sleep(3000);
-//    }
+
