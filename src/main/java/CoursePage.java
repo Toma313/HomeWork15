@@ -9,29 +9,29 @@ import java.util.List;
 
 public class CoursePage {
 
-    @FindBy (xpath = "//*[contains(@class,\"course-list\")and contains(@class,\"course-list_item\")]")
+    @FindBy(xpath = "//div[@id=\"coursesMenuSearchField\"]//input[@class=\"search-field_input\"]")
     static
     List<WebElement> coursesList;
 
-    @FindBy( id = "coursesMenuSearchField")
+    @FindBy(xpath = "//*[@id=\"coursesMenuSearchField\"]/input")
+    static
     WebElement searchField;
 
 
     static WebDriver driver;
+
     public CoursePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public  static List<String> getCourseList(String item) {
-        driver.findElement(searchField).sendKeys();
-        for (WebElement i  : coursesList){
+    public static List<String> getCourseList(String item) {
+        driver.findElement((By) searchField).sendKeys(item);
+
+        for (WebElement i : coursesList) {
             String name = i.findElement(By.className("course-label_name")).getText();
-
-        return new Object[];
+            return new Object[][]{name};
+        }
     }
-
-
-
 }
 
