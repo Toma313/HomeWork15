@@ -4,12 +4,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class CoursePage {
 
-    @FindBy(xpath = "//div[@id=\"coursesMenuSearchField\"]//input[@class=\"search-field_input\"]")
+    @FindBy(xpath = "//div[@id=\"coursesMenuSearchPanel\"]//p[@class=\"course-label_name\"]")
     static
     List<WebElement> coursesList;
 
@@ -25,13 +26,18 @@ public class CoursePage {
         PageFactory.initElements(driver, this);
     }
 
-    public static List<String> getCourseList(String item) {
-        driver.findElement((By) searchField).sendKeys(item);
-
-        for (WebElement i : coursesList) {
-            String name = i.findElement(By.className("course-label_name")).getText();
-            return new Object[][]{name};
+    public  List<String> getCourseList(String item) {
+        searchField.sendKeys(item);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+        List<String> list = new ArrayList<>();
+        for (WebElement i : coursesList) {
+            list.add(i.getText());
+        }
+        return list;
     }
 }
 
